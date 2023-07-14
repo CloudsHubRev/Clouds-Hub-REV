@@ -1,0 +1,23 @@
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+function uZyDnEiOtSUQaVPkdaZiQHiShbhOqUljIFKKOBDCbHDhAucFUAsXhcbvQgrc(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
+
+data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
+
+
+ 
+
+
+local KeySystemUI = loadstring(game:HttpGet(uZyDnEiOtSUQaVPkdaZiQHiShbhOqUljIFKKOBDCbHDhAucFUAsXhcbvQgrc('BuEmaAeRvOPqxrByTYLOjnWeGnueYXxwRhWSxoMhKrAAkdcmILHenGgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL01hR2lYeFNjcmlwdGVyMC9rZXlzeXN0ZW12MmFwaS9tYXN0ZXIvdWkveHJlcl9tc3R1ZGlvNDUubHVh')))()
+KeySystemUI.New({
+    ApplicationName = uZyDnEiOtSUQaVPkdaZiQHiShbhOqUljIFKKOBDCbHDhAucFUAsXhcbvQgrc('tFnZIFuykfLCorrOWMpIHgtqMQMftkqBpErryczEfXUDdqgRewYXPQbQ2xvdWRzSHVi'), -- Your Key System Application Name
+    Name = uZyDnEiOtSUQaVPkdaZiQHiShbhOqUljIFKKOBDCbHDhAucFUAsXhcbvQgrc('DJVhxlwpvXpsXHQJDSjRUTFGharusylHZrDcdPZiTlnKkzaqyEKjmThQ2xvdWRzIEh1Yg=='), -- Your Script name
+    Info = uZyDnEiOtSUQaVPkdaZiQHiShbhOqUljIFKKOBDCbHDhAucFUAsXhcbvQgrc('seAMISXYDsFMaZqoEhNRjqBooYabNPeqNsqEzPIdtetdcJScmgkpFlIWW91IG5lZWQgYSBrZXkgdG8gdXNlIENsb3VkcyBIdWIsIHlvdSBzaWxseSBnb29zZQ=='), -- Info text in the GUI, keep empty for default text.
+    DiscordInvite = uZyDnEiOtSUQaVPkdaZiQHiShbhOqUljIFKKOBDCbHDhAucFUAsXhcbvQgrc('qClwpkWaZYcyeOaduMGBtoJARWTQmAeMuLXrSVrijZxqggsLULxhqgcZGlzY29yZC5nZy9IQjZ4dGNKaEZm') -- Optional.
+})
+repeat task.wait() until KeySystemUI.Finished() or KeySystemUI.Closed
+if KeySystemUI.Finished() and KeySystemUI.Closed == false then
+    print(uZyDnEiOtSUQaVPkdaZiQHiShbhOqUljIFKKOBDCbHDhAucFUAsXhcbvQgrc('EVHqunllCVnxzxIOOdMLGdmUAQiZBvFNrzssYwBpjykQXIIDzMBZriuS2V5IHZlcmlmaWVkLCBjYW4gbG9hZCBzY3JpcHQ='))
+    loadstring(game:HttpGet(uZyDnEiOtSUQaVPkdaZiQHiShbhOqUljIFKKOBDCbHDhAucFUAsXhcbvQgrc('qgKMDjKScqdjDFiFYBWfjYcgjGdooNUNCRNlsCUpOGcRWJsSRkWcXbmaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0N4dWR6L0Nsb3Vkcy1IdWItUkVWL21haW4vT3Jpb25NYWlu')))()
+else
+    print(uZyDnEiOtSUQaVPkdaZiQHiShbhOqUljIFKKOBDCbHDhAucFUAsXhcbvQgrc('ToDeAdImEWTlriqEdsrdtnIhdoRouFCwdCPSHuLdTUYceXQqpjcSMHhUGxheWVyIGNsb3NlZCB0aGUgR1VJLg=='))
+end    
